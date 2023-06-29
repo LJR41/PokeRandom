@@ -4,351 +4,519 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <div class="parent">
-            <div class="container">
+    <div class="container">
+        <div class="navbar parent">
             <h1>PokeRandom</h1>
-            <div class="slot" id="slot1">
-                <input type="checkbox" name="starter" value="1" id="tradstart" onchange="getTraditional(this)">
-                Traditional Starter </input>
-                <label for="typing" id="type1">Primary Type</label>
-                <select name="Type" id="typing1">
-                    <option value="1">Normal</option>
-                    <option value="2">Fighting</option>
-                    <option value="3">Flying</option>
-                    <option value="4">Poison</option>
-                    <option value="5">Ground</option>
-                    <option value="6">Rock</option>
-                    <option value="7">Bug</option>
-                    <option value="8">Ghost</option>
-                    <option value="9">Steel</option>
-                    <option value="10">Fire</option>
-                    <option value="11">Water</option>
-                    <option value="12">Grass</option>
-                    <option value="13">Electric</option>
-                    <option value="14">Psychic</option>
-                    <option value="15">Ice</option>
-                    <option value="17">Dark</option>
-                    <option value="18">Fairy</option>
-                    <option value="16">Dragon</option>
-                </select>
-                <label for="StarType" id="startype"> Type </label>
-                <select name="StarType" id="starter">
-                    <option value="1">Grass</option>
-                    <option value="2">Fire</option>
-                    <option value="3">Water</option>
-                    <option value="4">Electric</option>
-                    <option value="5">Normal</option>
-                </select>
-                <label for="typing" id="type2">Secondary Type</label>
-                <select name="Type" id="typing12">
-                    <option value="0">--</option>
-                    <option value="1">Normal</option>
-                    <option value="2">Fighting</option>
-                    <option value="3">Flying</option>
-                    <option value="4">Poison</option>
-                    <option value="5">Ground</option>
-                    <option value="6">Rock</option>
-                    <option value="7">Bug</option>
-                    <option value="8">Ghost</option>
-                    <option value="9">Steel</option>
-                    <option value="10">Fire</option>
-                    <option value="11">Water</option>
-                    <option value="12">Grass</option>
-                    <option value="13">Electric</option>
-                    <option value="14">Psychic</option>
-                    <option value="15">Ice</option>
-                    <option value="17">Dark</option>
-                    <option value="18">Fairy</option>
-                    <option value="16">Dragon</option>
-                </select>
-                <button onclick="giveRandom1()" id="btn1">Submit</button>
-                <button onclick="randomStar()" id="btn2">Submit</button>
-                <div>
-                    <img class ="pokeimage" id="randomImg1" src="./images/tallgrass.png" alt="">
-                    <h3 id="randomName1"></h3>
+
+        </div>
+        <div class="team parent">
+            <div class="team1-2 flex">
+                <div class="slot " id="slot1">
+                    <div class="monborder">
+                        <div class="monname flex">
+                            <h3 id="randomName1"></h3>
+                        </div>
+                        <div class="mon1 flex">
+                            <img class ="pokeimage" id="randomImg1" src="./images/tallgrass.png" alt="">
+                        </div>
+                    </div>
+                    <div class="montype">
+                        <div class="flex">
+                            <input type="checkbox" name="starter" value="1" onchange="getTraditional(this)"></input>
+                            <label for="starter" id="tradstart">Original Starter</label>
+                            <label for="StarType" id="startype"> Type </label>
+                            <select name="StarType"  id="starter">
+                                <option value="1">Grass</option>
+                                <option value="2">Fire</option>
+                                <option value="3">Water</option>
+                                <option value="4">Electric</option>
+                                <option value="5">Normal</option>
+                            </select>                            
+                        </div>
+                        <div class="startlabel flex">
+                            <label for="Type" id="type1">1st Type</label>
+                            <label for="Type2" id="type2">2nd Type</label>
+                        </div>
+                        <div class="flex">
+                            <select name="Type" id="typing1">
+                                <option value="1">Normal</option>
+                                <option value="2">Fighting</option>
+                                <option value="3">Flying</option>
+                                <option value="4">Poison</option>
+                                <option value="5">Ground</option>
+                                <option value="6">Rock</option>
+                                <option value="7">Bug</option>
+                                <option value="8">Ghost</option>
+                                <option value="9">Steel</option>
+                                <option value="10">Fire</option>
+                                <option value="11">Water</option>
+                                <option value="12">Grass</option>
+                                <option value="13">Electric</option>
+                                <option value="14">Psychic</option>
+                                <option value="15">Ice</option>
+                                <option value="17">Dark</option>
+                                <option value="18">Fairy</option>
+                                <option value="16">Dragon</option>
+                            </select>
+                            <select name="Type2" id="typing12">
+                                <option value="0">--</option>
+                                <option value="1">Normal</option>
+                                <option value="2">Fighting</option>
+                                <option value="3">Flying</option>
+                                <option value="4">Poison</option>
+                                <option value="5">Ground</option>
+                                <option value="6">Rock</option>
+                                <option value="7">Bug</option>
+                                <option value="8">Ghost</option>
+                                <option value="9">Steel</option>
+                                <option value="10">Fire</option>
+                                <option value="11">Water</option>
+                                <option value="12">Grass</option>
+                                <option value="13">Electric</option>
+                                <option value="14">Psychic</option>
+                                <option value="15">Ice</option>
+                                <option value="17">Dark</option>
+                                <option value="18">Fairy</option>
+                                <option value="16">Dragon</option>
+                            </select>
+                        </div>
+                        <div class="type1btn flex">
+                            <button class="submit" onclick="giveRandom1()" id="btn1">Submit</button>
+                            <button class="submit" onclick="randomStar()" id="btn2">Submit</button>
+                        </div>
+                    </div>
+                    </div>
+                <div class="slot2" id="slot2">
+                    <div class="monborder">
+                        <div class="monname flex">
+                            <h3 id="randomName2"></h3>
+                        </div>
+                        <div class="mon2 flex">
+                            <img class ="pokeimage" id="randomImg2" src="images/tallgrass.png" alt="">
+                        </div>
+                        
+                    </div>
+                    <div class="montype">
+                        <div class=" typelabel flex">
+                            <p>1st Type</p>
+                            <p>2nd Type</p>
+                        </div>
+                        <div class="flex">
+                            <select name="Type" id="typing2">
+                                <option value="1">Normal</option>
+                                <option value="2">Fighting</option>
+                                    <option value="3">Flying</option>
+                                    <option value="4">Poison</option>
+                                    <option value="5">Ground</option>
+                                    <option value="6">Rock</option>
+                                    <option value="7">Bug</option>
+                                    <option value="8">Ghost</option>
+                                    <option value="9">Steel</option>
+                                    <option value="10">Fire</option>
+                                    <option value="11">Water</option>
+                                    <option value="12">Grass</option>
+                                    <option value="13">Electric</option>
+                                    <option value="14">Psychic</option>
+                                    <option value="15">Ice</option>
+                                    <option value="17">Dark</option>
+                                    <option value="18">Fairy</option>
+                                    <option value="16">Dragon</option>
+                                </select>
+                            <select name="Type" id="typing22">
+                                <option value="0">--</option>
+                                <option value="1">Normal</option>
+                                <option value="2">Fighting</option>
+                                <option value="3">Flying</option>
+                                <option value="4">Poison</option>
+                                <option value="5">Ground</option>
+                                <option value="6">Rock</option>
+                                <option value="7">Bug</option>
+                                <option value="8">Ghost</option>
+                                <option value="9">Steel</option>
+                                <option value="10">Fire</option>
+                                <option value="11">Water</option>
+                                <option value="12">Grass</option>
+                                <option value="13">Electric</option>
+                                <option value="14">Psychic</option>
+                                <option value="15">Ice</option>
+                                <option value="17">Dark</option>
+                                <option value="18">Fairy</option>
+                                <option value="16">Dragon</option>
+                            </select>
+                        </div>
+                        <div class="buttons flex">
+                            <button class="submit" onclick="giveRandom2()">Submit</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="slot" id="slot1">
-                <label for="typing">Primary Type</label>
-                <select name="Type" id="typing2">
-                    <option value="1">Normal</option>
-                    <option value="2">Fighting</option>
-                    <option value="3">Flying</option>
-                    <option value="4">Poison</option>
-                    <option value="5">Ground</option>
-                    <option value="6">Rock</option>
-                    <option value="7">Bug</option>
-                    <option value="8">Ghost</option>
-                    <option value="9">Steel</option>
-                    <option value="10">Fire</option>
-                    <option value="11">Water</option>
-                    <option value="12">Grass</option>
-                    <option value="13">Electric</option>
-                    <option value="14">Psychic</option>
-                    <option value="15">Ice</option>
-                    <option value="17">Dark</option>
-                    <option value="18">Fairy</option>
-                    <option value="16">Dragon</option>
-                </select>
-                <label for="typing">Secondary Type</label>
-                <select name="Type" id="typing22">
-                    <option value="0">--</option>
-                    <option value="1">Normal</option>
-                    <option value="2">Fighting</option>
-                    <option value="3">Flying</option>
-                    <option value="4">Poison</option>
-                    <option value="5">Ground</option>
-                    <option value="6">Rock</option>
-                    <option value="7">Bug</option>
-                    <option value="8">Ghost</option>
-                    <option value="9">Steel</option>
-                    <option value="10">Fire</option>
-                    <option value="11">Water</option>
-                    <option value="12">Grass</option>
-                    <option value="13">Electric</option>
-                    <option value="14">Psychic</option>
-                    <option value="15">Ice</option>
-                    <option value="17">Dark</option>
-                    <option value="18">Fairy</option>
-                    <option value="16">Dragon</option>
-                </select>
-                <button onclick="giveRandom2()">Submit</button>
-                <div>
-                    <img class ="pokeimage" id="randomImg2" src="./images/tallgrass.png" alt="">
-                    <h3 id="randomName2"></h3>
+            <div class="team3-4 flex">
+                <div class="slot " id="slot4">
+                    <div class="monborder">
+                        <div class="monname flex">
+                            <h3 id="randomName3"></h3>
+                        </div>
+                        <div class="mon3 flex">
+                            <img class ="pokeimage" id="randomImg3" src="images/tallgrass.png" alt="">
+                        </div>
+                    </div>
+                    <div class="montype">
+                        <div class=" typelabel flex">
+                            <p>1st Type</p>
+                        <p>2nd Type</p>
+                    </div>
+                    <div class="flex">
+                        <select name="Type" id="typing3">
+                            <option value="1">Normal</option>
+                            <option value="2">Fighting</option>
+                            <option value="3">Flying</option>
+                            <option value="4">Poison</option>
+                            <option value="5">Ground</option>
+                            <option value="6">Rock</option>
+                            <option value="7">Bug</option>
+                            <option value="8">Ghost</option>
+                            <option value="9">Steel</option>
+                            <option value="10">Fire</option>
+                            <option value="11">Water</option>
+                            <option value="12">Grass</option>
+                            <option value="13">Electric</option>
+                            <option value="14">Psychic</option>
+                            <option value="15">Ice</option>
+                            <option value="17">Dark</option>
+                            <option value="18">Fairy</option>
+                            <option value="16">Dragon</option>
+                        </select>
+                        <select name="Type" id="typing32">
+                            <option value="0">--</option>
+                            <option value="1">Normal</option>
+                            <option value="2">Fighting</option>
+                            <option value="3">Flying</option>
+                            <option value="4">Poison</option>
+                            <option value="5">Ground</option>
+                            <option value="6">Rock</option>
+                            <option value="7">Bug</option>
+                            <option value="8">Ghost</option>
+                            <option value="9">Steel</option>
+                            <option value="10">Fire</option>
+                            <option value="11">Water</option>
+                            <option value="12">Grass</option>
+                            <option value="13">Electric</option>
+                            <option value="14">Psychic</option>
+                            <option value="15">Ice</option>
+                            <option value="17">Dark</option>
+                            <option value="18">Fairy</option>
+                            <option value="16">Dragon</option>
+                        </select>
+                    </div>
+                    <div class="buttons flex">
+                        <button class="submit" onclick="giveRandom3()" id="btn1">Submit</button>
+                    </div>
                 </div>
             </div>
-            <div class="slot" id="slot1">
-                <label for="typing">Primary Type</label>
-                <select name="Type" id="typing3">
-                    <option value="1">Normal</option>
-                    <option value="2">Fighting</option>
-                    <option value="3">Flying</option>
-                    <option value="4">Poison</option>
-                    <option value="5">Ground</option>
-                    <option value="6">Rock</option>
-                    <option value="7">Bug</option>
-                    <option value="8">Ghost</option>
-                    <option value="9">Steel</option>
-                    <option value="10">Fire</option>
-                    <option value="11">Water</option>
-                    <option value="12">Grass</option>
-                    <option value="13">Electric</option>
-                    <option value="14">Psychic</option>
-                    <option value="15">Ice</option>
-                    <option value="17">Dark</option>
-                    <option value="18">Fairy</option>
-                    <option value="16">Dragon</option>
-                </select>
-                <label for="typing">Secondary Type</label>
-                <select name="Type" id="typing32">
-                    <option value="0">--</option>
-                    <option value="1">Normal</option>
-                    <option value="2">Fighting</option>
-                    <option value="3">Flying</option>
-                    <option value="4">Poison</option>
-                    <option value="5">Ground</option>
-                    <option value="6">Rock</option>
-                    <option value="7">Bug</option>
-                    <option value="8">Ghost</option>
-                    <option value="9">Steel</option>
-                    <option value="10">Fire</option>
-                    <option value="11">Water</option>
-                    <option value="12">Grass</option>
-                    <option value="13">Electric</option>
-                    <option value="14">Psychic</option>
-                    <option value="15">Ice</option>
-                    <option value="17">Dark</option>
-                    <option value="18">Fairy</option>
-                    <option value="16">Dragon</option>
-                </select>
-                <button onclick="giveRandom3()">Submit</button>
-                <div>
-                    <img class ="pokeimage" id="randomImg3" src="./images/tallgrass.png" alt="">
-                    <h3 id="randomName3"></h3>
+            <div class="slot4" id="slot4">
+                <div class="monborder">
+                    <div class="monname flex">
+                        <h3 id="randomName4"></h3>
+                    </div>
+                    <div class="mon4 flex">
+                        <img class ="pokeimage" id="randomImg4" src="images/tallgrass.png" alt="">
+                    </div>
+                    
+                </div>
+                <div class="montype">
+                    <div class=" typelabel flex">
+                        <p>1st Type</p>
+                        <p>2nd Type</p>
+                    </div>
+                    <div class="flex">
+                        <select name="Type" id="typing4">
+                            <option value="1">Normal</option>
+                            <option value="2">Fighting</option>
+                            <option value="3">Flying</option>
+                            <option value="4">Poison</option>
+                            <option value="5">Ground</option>
+                            <option value="6">Rock</option>
+                            <option value="7">Bug</option>
+                            <option value="8">Ghost</option>
+                            <option value="9">Steel</option>
+                            <option value="10">Fire</option>
+                            <option value="11">Water</option>
+                            <option value="12">Grass</option>
+                            <option value="13">Electric</option>
+                            <option value="14">Psychic</option>
+                            <option value="15">Ice</option>
+                            <option value="17">Dark</option>
+                            <option value="18">Fairy</option>
+                            <option value="16">Dragon</option>
+                        </select>
+                        <select name="Type" id="typing42">
+                            <option value="0">--</option>
+                            <option value="1">Normal</option>
+                            <option value="2">Fighting</option>
+                            <option value="3">Flying</option>
+                            <option value="4">Poison</option>
+                            <option value="5">Ground</option>
+                            <option value="6">Rock</option>
+                            <option value="7">Bug</option>
+                            <option value="8">Ghost</option>
+                            <option value="9">Steel</option>
+                            <option value="10">Fire</option>
+                            <option value="11">Water</option>
+                            <option value="12">Grass</option>
+                            <option value="13">Electric</option>
+                            <option value="14">Psychic</option>
+                            <option value="15">Ice</option>
+                            <option value="17">Dark</option>
+                            <option value="18">Fairy</option>
+                            <option value="16">Dragon</option>
+                        </select>
+                    </div>
+                    <div class="buttons flex">
+                        <button class="submit" onclick="giveRandom4()">Submit</button>
+                    </div>
                 </div>
             </div>
-            <div class="slot" id="slot1">
-                <label for="typing">Primary Type</label>
-                <select name="Type" id="typing4">
-                    <option value="1">Normal</option>
-                    <option value="2">Fighting</option>
-                    <option value="3">Flying</option>
-                    <option value="4">Poison</option>
-                    <option value="5">Ground</option>
-                    <option value="6">Rock</option>
-                    <option value="7">Bug</option>
-                    <option value="8">Ghost</option>
-                    <option value="9">Steel</option>
-                    <option value="10">Fire</option>
-                    <option value="11">Water</option>
-                    <option value="12">Grass</option>
-                    <option value="13">Electric</option>
-                    <option value="14">Psychic</option>
-                    <option value="15">Ice</option>
-                    <option value="17">Dark</option>
-                    <option value="18">Fairy</option>
-                    <option value="16">Dragon</option>
-                </select>
-                <label for="typing">Secondary Type</label>
-                <select name="Type" id="typing42">
-                    <option value="0">--</option>
-                    <option value="1">Normal</option>
-                    <option value="2">Fighting</option>
-                    <option value="3">Flying</option>
-                    <option value="4">Poison</option>
-                    <option value="5">Ground</option>
-                    <option value="6">Rock</option>
-                    <option value="7">Bug</option>
-                    <option value="8">Ghost</option>
-                    <option value="9">Steel</option>
-                    <option value="10">Fire</option>
-                    <option value="11">Water</option>
-                    <option value="12">Grass</option>
-                    <option value="13">Electric</option>
-                    <option value="14">Psychic</option>
-                    <option value="15">Ice</option>
-                    <option value="17">Dark</option>
-                    <option value="18">Fairy</option>
-                    <option value="16">Dragon</option>
-                </select>
-                <button onclick="giveRandom4()">Submit</button>
-                <div>
-                    <img class ="pokeimage" id="randomImg4" src="./images/tallgrass.png" alt="">
-                    <h3 id="randomName4"></h3>
-                </div>
             </div>
-            <div class="slot" id="slot1">
-                <label for="typing">Primary Type</label>
-                <select name="Type" id="typing5">
-                    <option value="1">Normal</option>
-                    <option value="2">Fighting</option>
-                    <option value="3">Flying</option>
-                    <option value="4">Poison</option>
-                    <option value="5">Ground</option>
-                    <option value="6">Rock</option>
-                    <option value="7">Bug</option>
-                    <option value="8">Ghost</option>
-                    <option value="9">Steel</option>
-                    <option value="10">Fire</option>
-                    <option value="11">Water</option>
-                    <option value="12">Grass</option>
-                    <option value="13">Electric</option>
-                    <option value="14">Psychic</option>
-                    <option value="15">Ice</option>
-                    <option value="17">Dark</option>
-                    <option value="18">Fairy</option>
-                    <option value="16">Dragon</option>
-                </select>
-                <label for="typing">Secondary Type</label>
-                <select name="Type" id="typing52">
-                    <option value="0">--</option>
-                    <option value="1">Normal</option>
-                    <option value="2">Fighting</option>
-                    <option value="3">Flying</option>
-                    <option value="4">Poison</option>
-                    <option value="5">Ground</option>
-                    <option value="6">Rock</option>
-                    <option value="7">Bug</option>
-                    <option value="8">Ghost</option>
-                    <option value="9">Steel</option>
-                    <option value="10">Fire</option>
-                    <option value="11">Water</option>
-                    <option value="12">Grass</option>
-                    <option value="13">Electric</option>
-                    <option value="14">Psychic</option>
-                    <option value="15">Ice</option>
-                    <option value="17">Dark</option>
-                    <option value="18">Fairy</option>
-                    <option value="16">Dragon</option>
-                </select>
-                <button onclick="giveRandom5()">Submit</button>
-                <div>
-                    <img class ="pokeimage" id="randomImg5" src="./images/tallgrass.png" alt="">
+            <div class="team5-6 flex">
+        <div class="slot " id="slot5">
+            <div class="monborder">
+                <div class="monname flex">
                     <h3 id="randomName5"></h3>
                 </div>
+                <div class="mon5 flex">
+                    <img class ="pokeimage" id="randomImg5" src="images/tallgrass.png" alt="">
+                </div>
             </div>
-            <div class="slot" id="slot1">
-                <label for="typing">Primary Type</label>
-                <select name="Type" id="typing6">
-                    <option value="1">Normal</option>
-                    <option value="2">Fighting</option>
-                    <option value="3">Flying</option>
-                    <option value="4">Poison</option>
-                    <option value="5">Ground</option>
-                    <option value="6">Rock</option>
-                    <option value="7">Bug</option>
-                    <option value="8">Ghost</option>
-                    <option value="9">Steel</option>
-                    <option value="10">Fire</option>
-                    <option value="11">Water</option>
-                    <option value="12">Grass</option>
-                    <option value="13">Electric</option>
-                    <option value="14">Psychic</option>
-                    <option value="15">Ice</option>
-                    <option value="17">Dark</option>
-                    <option value="18">Fairy</option>
-                    <option value="16">Dragon</option>
-                </select>
-                <label for="typing">Secondary Type</label>
-                <select name="Type" id="typing62">
-                    <option value="0">--</option>
-                    <option value="1">Normal</option>
-                    <option value="2">Fighting</option>
-                    <option value="3">Flying</option>
-                    <option value="4">Poison</option>
-                    <option value="5">Ground</option>
-                    <option value="6">Rock</option>
-                    <option value="7">Bug</option>
-                    <option value="8">Ghost</option>
-                    <option value="9">Steel</option>
-                    <option value="10">Fire</option>
-                    <option value="11">Water</option>
-                    <option value="12">Grass</option>
-                    <option value="13">Electric</option>
-                    <option value="14">Psychic</option>
-                    <option value="15">Ice</option>
-                    <option value="17">Dark</option>
-                    <option value="18">Fairy</option>
-                    <option value="16">Dragon</option>
-                </select>
-                <button onclick="giveRandom6()">Submit</button>
-                <div>
-                    <img class ="pokeimage" id="randomImg6" src="./images/tallgrass.png" alt="">
+            <div class="montype">
+                <div class=" typelabel flex">
+                    <p>1st Type</p>
+                    <p>2nd Type</p>
+                </div>
+                <div class="flex">
+                    <select name="Type" id="typing5">
+                        <option value="1">Normal</option>
+                        <option value="2">Fighting</option>
+                        <option value="3">Flying</option>
+                        <option value="4">Poison</option>
+                        <option value="5">Ground</option>
+                        <option value="6">Rock</option>
+                        <option value="7">Bug</option>
+                        <option value="8">Ghost</option>
+                        <option value="9">Steel</option>
+                        <option value="10">Fire</option>
+                        <option value="11">Water</option>
+                        <option value="12">Grass</option>
+                        <option value="13">Electric</option>
+                        <option value="14">Psychic</option>
+                        <option value="15">Ice</option>
+                        <option value="17">Dark</option>
+                        <option value="18">Fairy</option>
+                        <option value="16">Dragon</option>
+                    </select>
+                    <select name="Type" id="typing52">
+                        <option value="0">--</option>
+                        <option value="1">Normal</option>
+                        <option value="2">Fighting</option>
+                        <option value="3">Flying</option>
+                        <option value="4">Poison</option>
+                        <option value="5">Ground</option>
+                        <option value="6">Rock</option>
+                        <option value="7">Bug</option>
+                        <option value="8">Ghost</option>
+                        <option value="9">Steel</option>
+                        <option value="10">Fire</option>
+                        <option value="11">Water</option>
+                        <option value="12">Grass</option>
+                        <option value="13">Electric</option>
+                        <option value="14">Psychic</option>
+                        <option value="15">Ice</option>
+                        <option value="17">Dark</option>
+                        <option value="18">Fairy</option>
+                        <option value="16">Dragon</option>
+                    </select>
+                </div>
+                <div class="buttons flex">
+                    <button class="submit" onclick="giveRandom5()" id="btn1">Submit</button>
+                </div>
+            </div>
+            </div>
+            <div class="slot6" id="slot6">
+            <div class="monborder">
+                <div class="monname flex">
                     <h3 id="randomName6"></h3>
                 </div>
-            </div>
-            <div><button onclick="getFinal()">Finalize</button></div>
-            <!-- Finalize Modal -->
-            <div id="myModal" class="modal">
-                <!-- Finzalize content -->
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Congratulations! Here's your team! Good luck out there!</p>
-                    <img class ="pokeimage" id="finalImg1" src="./images/tallgrass.png" alt="">
-                    <img class ="pokeimage" id="finalImg2" src="./images/tallgrass.png" alt="">
-                    <img class ="pokeimage" id="finalImg3" src="./images/tallgrass.png" alt="">
-                    <img class ="pokeimage" id="finalImg4" src="./images/tallgrass.png" alt="">
-                    <img class ="pokeimage" id="finalImg5" src="./images/tallgrass.png" alt="">
-                    <img class ="pokeimage" id="finalImg6" src="./images/tallgrass.png" alt="">
+                <div class="mon6 flex">
+                    <img class ="pokeimage" id="randomImg6" src="images/tallgrass.png" alt="">
                 </div>
-            
+                
             </div>
-            <!-- Error Modal -->
-            <div id="errModal" class="error">
-            <!-- Error content -->
-            <div class="error-content" >
-                <span class="errclose">&times;</span>
-                <p>It looks like this pokemon hasn't been discovered yet! Try a different combination.</p>
-                <img src="./images/oak.png" alt="professor oak" id="error">
-            </div>
+            <div class="montype">
+                <div class=" typelabel flex">
+                    <p>1st Type</p>
+                    <p>2nd Type</p>
+                </div>
+                <div class="flex">
+                    <select name="Type" id="typing6">
+                        <option value="1">Normal</option>
+                        <option value="2">Fighting</option>
+                        <option value="3">Flying</option>
+                        <option value="4">Poison</option>
+                        <option value="5">Ground</option>
+                        <option value="6">Rock</option>
+                        <option value="7">Bug</option>
+                        <option value="8">Ghost</option>
+                        <option value="9">Steel</option>
+                        <option value="10">Fire</option>
+                        <option value="11">Water</option>
+                        <option value="12">Grass</option>
+                            <option value="13">Electric</option>
+                            <option value="14">Psychic</option>
+                            <option value="15">Ice</option>
+                            <option value="17">Dark</option>
+                            <option value="18">Fairy</option>
+                            <option value="16">Dragon</option>
+                        </select>
+                        <select name="Type" id="typing62">
+                            <option value="0">--</option>
+                            <option value="1">Normal</option>
+                            <option value="2">Fighting</option>
+                        <option value="3">Flying</option>
+                        <option value="4">Poison</option>
+                        <option value="5">Ground</option>
+                        <option value="6">Rock</option>
+                        <option value="7">Bug</option>
+                        <option value="8">Ghost</option>
+                        <option value="9">Steel</option>
+                        <option value="10">Fire</option>
+                        <option value="11">Water</option>
+                        <option value="12">Grass</option>
+                        <option value="13">Electric</option>
+                        <option value="14">Psychic</option>
+                        <option value="15">Ice</option>
+                        <option value="17">Dark</option>
+                        <option value="18">Fairy</option>
+                        <option value="16">Dragon</option>
+                    </select>
+                </div>
+                <div class="buttons flex">
+                    <button class="submit" onclick="giveRandom6()">Submit</button>
+                </div>
             </div>
         </div>
+            </div> 
+
+        </div>
+        <div class=" flex">
+            <button class="finalbtn" onclick="getFinal()">Finalize</button>
+        </div>
+<!-- Finalize Modal -->
+        <div id="myModal" class="modal">
+    <!-- Finzalize content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="finalMessage flex">
+                    <p>Congratulations! Here's your team! Good luck out there!</p>
+                </div>
+                <div class="final1 flex">
+                    <img class ="pokeimage" id="finalImg1" src="images/tallgrass.png" alt="">
+                    <img class ="pokeimage" id="finalImg2" src="images/tallgrass.png" alt="">
+                    <img class ="pokeimage" id="finalImg3" src="images/tallgrass.png" alt="">
+                </div>
+                <div class="final2 flex">
+                    <img class ="pokeimage" id="finalImg4" src="images/tallgrass.png" alt="">
+                    <img class ="pokeimage" id="finalImg5" src="images/tallgrass.png" alt="">
+                    <img class ="pokeimage" id="finalImg6" src="images/tallgrass.png" alt="">
+                </div>
+            </div>
+                
+        </div>
+            <!-- Finalize Modal -->
+        <div id="notfullmodal" class="notfullmodal">
+            <!-- Finzalize content -->
+            <div class="notmodal-content">
+                <span class="notclose">&times;</span>
+                            <div class="finalMessage flex">
+                                <h6>
+                                    It looks like you still have space for Pokemon!
+                                    But you're welcome to start your journey with these!
+                                </h6>
+                            </div>
+                            <div class="notFinal1 flex">
+                                <img class ="notFull1 pokeimage"  src="images/tallgrass.png" alt="">
+                                <img class ="notFull2 pokeimage"  src="images/tallgrass.png" alt="">
+                                <img class ="notFull3 pokeimage"  src="images/tallgrass.png" alt="">
+                            </div>
+                            <div class="notFinal2 flex">
+                                <img class ="notFull4 pokeimage"  src="images/tallgrass.png" alt="">
+                                <img class ="notFull5 pokeimage"  src="images/tallgrass.png" alt="">
+                                <img class ="notFull6 pokeimage"  src="images/tallgrass.png" alt="">
+                            </div>
+                            <div class="flex">
+                                <img id="sada" src="./images/sada.png" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div id="nonemodal" class="nonemodal">
+                        <!-- Finzalize content -->
+                        <div class="nonemodal-content">
+                            <span class="noneclose">&times;</span>
+                                        <div class="finalMessage flex">
+                                            <h6>
+                                                You should pick some Pokemon before starting your journey!
+                                            </h6>
+                                        </div>
+                                        <div class="noneFinal1 flex">
+                                            <img class ="none1 pokeimage"  src="images/tallgrass.png" alt="">
+                                            <img class ="none2 pokeimage"  src="images/tallgrass.png" alt="">
+                                            <img class ="none3 pokeimage"  src="images/tallgrass.png" alt="">
+                                        </div>
+                                        <div class="noneFinal2 flex">
+                                            <img class ="none4 pokeimage"  src="images/tallgrass.png" alt="">
+                                            <img class ="none5 pokeimage"  src="images/tallgrass.png" alt="">
+                                            <img class ="none6 pokeimage"  src="images/tallgrass.png" alt="">
+                                        </div>
+                                        <div class="flex">
+                                            <img id="birch" src="./images/birch.png" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+            <!-- Error Modal -->
+            <div id="errModal" class="error">
+                <!-- Error content -->
+                <div class="error-content" >
+                    <span class="errclose">&times;</span>
+                    <div class="flex">
+                        <p>It looks like this pokemon hasn't been discovered yet! Try a different combination.</p>
+                    </div>
+                    <div class="flex"><img src="./images/oak.png" alt="professor oak" id="error"></div>
+                </div>
+            </div>
+        <div class="resourceparent ">
+            <div class="resource">
+                <div class="resohead flex">
+                    <h4>Check Out These Other Resources!</h4>
+                </div>
+                <div class="resolist">
+                    <ul>
+                        <li><a href="https://pokeapi.co/">PokeApi</a></li>
+                        <li><a href="https://victoryroadvgc.com/resources/">Victory Road</a></li>
+                        <li><a href="https://bulbapedia.bulbagarden.net/wiki/Main_Page">Bulbapedia</a></li>
+                        <li><a href="https://compendium.pokegym.net/resources-for-judges/">PokeGym</a></li>
+                        <li><a href="https://www.pokemon.com/us/play-pokemon/about/tournaments-rules-and-resources/">Pokemon.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>    
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    
     <script src="script.js"></script>
 
 </body>

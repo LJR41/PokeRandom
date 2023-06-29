@@ -3,6 +3,8 @@
 async function giveRandom1(){
     var randomImg = document.getElementById("randomImg1")
     randomImg.src = "images/loading_ball.gif"
+    var randomName = document.getElementById("randomName1")
+        randomName.innerText = "Searching..."
     var type = document.getElementById("typing1"); 
     var typeValue = type.value; 
     var type2 = document.getElementById("typing12")
@@ -17,9 +19,9 @@ async function giveRandom1(){
         var randomresponse = await fetch(randomUrl)
         var randomData = await randomresponse.json();
         randomImg.src = randomData.sprites.front_default
-        var randomName = document.getElementById("randomName1")
         randomName.innerText = randomData.name
         document.getElementById("finalImg1").src = randomData.sprites.front_default
+        document.querySelector('.notFull1').src = randomData.sprites.front_default
         
     }
     try{
@@ -42,15 +44,16 @@ async function giveRandom1(){
             var randomData2 = await randomresponse2.json();
             var randomImg = document.getElementById("randomImg1")
             randomImg.src = randomData2.sprites.front_default
-            var randomName = document.getElementById("randomName1")
             randomName.innerText = randomData2.name
             document.getElementById("finalImg1").src = randomData2.sprites.front_default
+            document.querySelector('.notFull1').src = randomData2.sprites.front_default
 
 }
 }
 catch{
     errModal.style.display = "block"
     randomImg.src = "images/missing.gif"
+    document.getElementById("randomName1").innerText = "ERROR"
     
 }
 }
@@ -58,6 +61,8 @@ catch{
 async function giveRandom2(){
     var randomImg = document.getElementById("randomImg2")
     randomImg.src = "images/loading_ball.gif"
+    var randomName = document.getElementById("randomName2")
+        randomName.innerText = "Searching..."
     var type = document.getElementById("typing2"); 
     var typeValue = type.value; 
     var type2 = document.getElementById("typing22")
@@ -72,9 +77,9 @@ async function giveRandom2(){
         var randomresponse = await fetch(randomUrl)
         var randomData = await randomresponse.json();
         randomImg.src = randomData.sprites.front_default
-        var randomName = document.getElementById("randomName2")
         randomName.innerText = randomData.name
         document.getElementById("finalImg2").src = randomData.sprites.front_default
+        document.querySelector('.notFull2').src = randomData.sprites.front_default
     }
     try{
     if (typeValue2 > 0){
@@ -96,20 +101,23 @@ async function giveRandom2(){
             var randomData2 = await randomresponse2.json();
             var randomImg = document.getElementById("randomImg2")
             randomImg.src = randomData2.sprites.front_default
-            var randomName = document.getElementById("randomName2")
             randomName.innerText = randomData2.name
             document.getElementById("finalImg2").src = randomData2.sprites.front_default
+            document.querySelector('.notFull2').src = randomData2.sprites.front_default
 
 }
 }
 catch{
     errModal.style.display = "block"
     randomImg.src = "images/missing.gif"
+    document.getElementById("randomName3").innerText = "ERROR"
 }
 }
 async function giveRandom3(){
     var randomImg = document.getElementById("randomImg3")
     randomImg.src = "images/loading_ball.gif"
+    var randomName = document.getElementById("randomName3")
+        randomName.innerText = "Searching..."
     var type = document.getElementById("typing3"); 
     var typeValue = type.value; 
     var type2 = document.getElementById("typing32")
@@ -124,9 +132,9 @@ async function giveRandom3(){
         var randomresponse = await fetch(randomUrl)
         var randomData = await randomresponse.json();
         randomImg.src = randomData.sprites.front_default
-        var randomName = document.getElementById("randomName3")
         randomName.innerText = randomData.name
         document.getElementById("finalImg3").src = randomData.sprites.front_default
+        document.querySelector('.notFull3').src = randomData.sprites.front_default
     }
     try{
     if (typeValue2 > 0){
@@ -148,21 +156,23 @@ async function giveRandom3(){
             var randomData2 = await randomresponse2.json();
             var randomImg = document.getElementById("randomImg3")
             randomImg.src = randomData2.sprites.front_default
-            var randomName = document.getElementById("randomName3")
             randomName.innerText = randomData2.name
             document.getElementById("finalImg3").src = randomData2.sprites.front_default
+            document.querySelector('.notFull3').src = randomData2.sprites.front_default
 
 }
 }
 catch{
     errModal.style.display = "block"
     randomImg.src = "images/missing.gif"
+    document.getElementById("randomName3").innerText = "ERROR"
 }
 }
-
 async function giveRandom4(){
     var randomImg = document.getElementById("randomImg4")
     randomImg.src = "images/loading_ball.gif"
+    var randomName = document.getElementById("randomName4")
+        randomName.innerText = "Searching..."
     var type = document.getElementById("typing4"); 
     var typeValue = type.value; 
     var type2 = document.getElementById("typing42")
@@ -177,9 +187,9 @@ async function giveRandom4(){
         var randomresponse = await fetch(randomUrl)
         var randomData = await randomresponse.json();
         randomImg.src = randomData.sprites.front_default
-        var randomName = document.getElementById("randomName4")
         randomName.innerText = randomData.name
         document.getElementById("finalImg4").src = randomData.sprites.front_default
+        document.querySelector('.notFull4').src = randomData.sprites.front_default
     }
     try{
     if (typeValue2 > 0){
@@ -201,21 +211,23 @@ async function giveRandom4(){
             var randomData2 = await randomresponse2.json();
             var randomImg = document.getElementById("randomImg4")
             randomImg.src = randomData2.sprites.front_default
-            var randomName = document.getElementById("randomName4")
             randomName.innerText = randomData2.name
             document.getElementById("finalImg4").src = randomData2.sprites.front_default
+            document.querySelector('.notFull4').src = randomData2.sprites.front_default
 
 }
 }
 catch{
     errModal.style.display = "block"
     randomImg.src = "images/missing.gif"
+    document.getElementById("randomName4").innerText = "ERROR"
 }
 }
-
 async function giveRandom5(){
     var randomImg = document.getElementById("randomImg5")
     randomImg.src = "images/loading_ball.gif"
+    var randomName = document.getElementById("randomName5")
+        randomName.innerText = "Searching..."
     var type = document.getElementById("typing5"); 
     var typeValue = type.value; 
     var type2 = document.getElementById("typing52")
@@ -230,9 +242,9 @@ async function giveRandom5(){
         var randomresponse = await fetch(randomUrl)
         var randomData = await randomresponse.json();
         randomImg.src = randomData.sprites.front_default
-        var randomName = document.getElementById("randomName5")
         randomName.innerText = randomData.name
         document.getElementById("finalImg5").src = randomData.sprites.front_default
+        document.querySelector('.notFull5').src = randomData.sprites.front_default
     }
     try {
     if (typeValue2 > 0){
@@ -254,21 +266,23 @@ async function giveRandom5(){
             var randomData2 = await randomresponse2.json();
             var randomImg = document.getElementById("randomImg5")
             randomImg.src = randomData2.sprites.front_default
-            var randomName = document.getElementById("randomName5")
             randomName.innerText = randomData2.name
             document.getElementById("finalImg5").src = randomData2.sprites.front_default
+            document.querySelector('.notFull5').src = randomData2.sprites.front_default
 
 }
 }
 catch{
     errModal.style.display = "block"
     randomImg.src = "images/missing.gif"
+    document.getElementById("randomName5").innerText = "ERROR"
 }
 }
-
 async function giveRandom6(){
     var randomImg = document.getElementById("randomImg6")
     randomImg.src = "images/loading_ball.gif"
+    var randomName = document.getElementById("randomName6")
+        randomName.innerText = "Searching..."
     var type = document.getElementById("typing6"); 
     var typeValue = type.value; 
     var type2 = document.getElementById("typing62")
@@ -283,9 +297,9 @@ async function giveRandom6(){
         var randomresponse = await fetch(randomUrl)
         var randomData = await randomresponse.json();
         randomImg.src = randomData.sprites.front_default
-        var randomName = document.getElementById("randomName6")
         randomName.innerText = randomData.name
         document.getElementById("finalImg6").src = randomData.sprites.front_default
+        document.querySelector('.notFull6').src = randomData.sprites.front_default
     }
     try{
     if (typeValue2 > 0){
@@ -307,18 +321,18 @@ async function giveRandom6(){
             var randomData2 = await randomresponse2.json();
             var randomImg = document.getElementById("randomImg6")
             randomImg.src = randomData2.sprites.front_default
-            var randomName = document.getElementById("randomName6")
             randomName.innerText = randomData2.name
             document.getElementById("finalImg6").src = randomData2.sprites.front_default
+            document.querySelector('.notFull6').src = randomData2.sprites.front_default
 
 }
 }
 catch{
     errModal.style.display = "block"
     randomImg.src = "images/missing.gif"
+    document.getElementById("randomName6").innerText = "ERROR"
 }
 }
-
 function getTraditional(element){
     var type1 = document.getElementById("typing1")
     var type2 = document.getElementById("typing12")
@@ -327,6 +341,7 @@ function getTraditional(element){
         type1.style.display="none"
         type2.style.display="none"
         starter.style.display="inline"
+        document.getElementById("tradstart").innerText = " "
         document.getElementById('type1').innerText = " "
         document.getElementById('type2').innerText = " "
         document.getElementById('startype').style.display = "inline"
@@ -338,14 +353,14 @@ function getTraditional(element){
         type1.style.display="inline"
         type2.style.display="inline"
         starter.style.display="none"
-        document.getElementById('type1').innerText = "Type 1"
-        document.getElementById('type2').innerText = "Type 2"
+        document.getElementById("tradstart").innerText = "Original Starter"
+        document.getElementById('type1').innerText = "1st Type"
+        document.getElementById('type2').innerText = "2nd Type"
         document.getElementById('startype').style.display = "none"
         document.getElementById('btn1').style.display = "inline"
         document.getElementById('btn2').style.display = "none"
     }
 }
-
 async function randomStar(){
     var randomImg = document.getElementById("randomImg1")
     randomImg.src = "images/loading_ball.gif"
@@ -368,6 +383,7 @@ async function randomStar(){
         var randomName = document.getElementById("randomName1")
             randomName.innerText = randomStarter.name
             document.getElementById("finalImg1").src = randomStarter.sprites.front_default
+            document.querySelector('.notFull1').src = randomStarter.sprites.front_default
     }
     if (typeValue == 2){
         var starters = await Promise.all([
@@ -386,6 +402,7 @@ async function randomStar(){
         var randomName = document.getElementById("randomName1")
             randomName.innerText = randomStarter.name
             document.getElementById("finalImg1").src = randomStarter.sprites.front_default
+            document.querySelector('.notFull1').src = randomStarter.sprites.front_default
     }
     if(typeValue == 3){
     var starters = await Promise.all([
@@ -405,6 +422,7 @@ async function randomStar(){
     var randomName = document.getElementById("randomName1")
         randomName.innerText = randomStarter.name
         document.getElementById("finalImg1").src = randomStarter.sprites.front_default
+        document.querySelector('.notFull1').src = randomStarter.sprites.front_default
     }
     if(typeValue == 4){
         var starters = await fetch("https://pokeapi.co/api/v2/pokemon/pikachu")
@@ -413,6 +431,7 @@ async function randomStar(){
         var randomName = document.getElementById("randomName1")
             randomName.innerText = pikaStart.name
             document.getElementById("finalImg1").src = pikaStart.sprites.front_default
+            document.querySelector('.notFull1').src = pikaStart.sprites.front_default
     }
     if(typeValue == 5){
         var starters = await fetch("https://pokeapi.co/api/v2/pokemon/eevee")
@@ -421,28 +440,61 @@ async function randomStar(){
         var randomName = document.getElementById("randomName1")
             randomName.innerText = evStart.name
             document.getElementById("finalImg1").src = evStart.sprites.front_default
+            document.querySelector('.notFull1').src = evStart.sprites.front_default
 }
 }
-
 // Get the modal
 var modal = document.getElementById("myModal");
 var errModal = document.getElementById("errModal")
+var notFull = document.getElementById("notfullmodal")
+var none = document.getElementById("nonemodal")
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 var errspan = document.getElementsByClassName("errclose")[0];
+var notspan = document.getElementsByClassName("notclose")[0];
+var nonespan = document.getElementsByClassName("noneclose")[0];
 // When the user clicks on the button, open the modal
 function getFinal() {
-modal.style.display = "block";
+    var pokeImage = document.querySelector('.notFinal1 > img').src;
+    var pokeImage2 = document.querySelector('.notFinal2 > img').src;
+    var pokeImage3 = [document.querySelector('.notFull1').src, document.querySelector('.notFull2').src, document.querySelector('.notFull3').src, document.querySelector('.notFull4').src, document.querySelector('.notFull5').src, document.querySelector('.notFull6').src ]
+
+    function checkImgs(){
+        var total = 0
+    for (var i = 0; i < pokeImage3.length; i++){
+        if(pokeImage3[i] == 'file:///C:/Users/Josh/Desktop/Coding%20Dojo/Projects/PokeRandom/images/tallgrass.png' ){
+            total += 1
+        }
+    }
+    return total
+}
+    var result = checkImgs()
+    if(result < 6 && result > 0){
+        notFull.style.display = "block"
+    }
+    if(result == 6){
+        console.log(result)
+        none.style.display = "block"
+    }
+    if(result == 0){
+        modal.style.display = "block";
+    }
 }
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
 modal.style.display = "none"
 }
-
 errspan.onclick = function() {
 errModal.style.display = "none"
+}
+
+notspan.onclick = function() {
+    notFull.style.display = "none"
+    }
+nonespan.onclick = function() {
+    none.style.display = "none"
 }
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -455,6 +507,18 @@ window.onclick = function(event) {
 if (event.target == errModal) {
     errModal.style.display = "none"
 }
+} 
+
+window.onclick = function(event) {
+    if (event.target == notFull) {
+        notFull.style.display = "none"
+    }
+    } 
+
+window.onclick = function(event) {
+    if (event.target == none) {
+        none.style.display = "none"
+    }
 } 
 
 
