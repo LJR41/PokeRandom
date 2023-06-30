@@ -1,5 +1,7 @@
 *{
     font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 .flex{
     display: flex;
@@ -7,23 +9,36 @@
     justify-content: space-evenly;
 }
 .navbar{
-    background-color: rgb(217,4,41);
+    /* background-color: rgb(217,4,41); */
     color:rgb(237,242,244);
+    background-image: linear-gradient(rgb(217,4,41), #2b2d42);
 }
 .resource{
     background-color: rgb(217,4,41);
     color: rgb(237,242,244);
+    border: 2px solid black;
+    border-radius: 4px;
+}
+.slot2{
+    align-self: flex-start;
 }
 h3{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: large;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: medium;
 }
 
 p{
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+.team1-2, .team3-4, .team5-6{
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+
 
 .monborder {
     border: 2px solid rgb(43,45,66);
@@ -133,26 +148,66 @@ p{
     transform: translateY(4px);
 }
 
-.pokeimage, .notFull{
+.pokeimage, .notFull {
     height: 100px;
     width: 100px;
 }
-.team1-2, .team3-4, .team5-6{
-    margin-bottom: 10px;
+.zardheader{
+    width: 100x;
+    height: 120px;
 }
 
+#darkzard{
+    display: none;
+    height:100px;
+    width: 100px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #starter, #startype, #btn2{
     display: none;
 }
 
+a{
+    color: #edf2f4;
+}
 
-#error, #sada, #birch{
+.resoflex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#umbreon{
+    display: none;
+}
+
+#umbreon:hover{
+    transform: scale(1.05, 1.05);
+    cursor: pointer;
+}
+
+#espeon:hover{
+    transform: scale(1.05, 1.05);
+    transition: 2s;
+    cursor: pointer;
+}
+
+.resolist, #umbreon, #espeon{
+    margin:25px;
+}
+
+#error, #sada, #birch, #burnet{
     height: 250px;
     width: 250px;
 }
 
 /* The Modal (background) */
-.modal, .error, .notfullmodal, .nonemodal {
+.modal, .error, .notfullmodal, .nonemodal, .finalerr {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -167,7 +222,7 @@ p{
 
 /* Modal Content/Box */
 
-.modal-content, .error-content, .notmodal-content, .nonemodal-content{
+.modal-content, .error-content, .notmodal-content, .nonemodal-content, .finalerr-content{
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
@@ -176,7 +231,7 @@ p{
 }
 
 /* The Close Button */
-.close, .errclose, .notfullmodal, .noneclose  {
+.close, .errclose, .notfullmodal, .noneclose, .finalclose {
     color: #aaa;
     float: right;
     font-size: 28px;
@@ -190,43 +245,74 @@ p{
 .notclose:hover,
 .notclose:focus,
 .noneclose:hover,
-.noneclose:focus {
+.noneclose:focus,
+.finalclose:hover,
+.finalclose:focus{
     color: black;
     text-decoration: none;
     cursor: pointer;
 } 
 
-
-.resource{
-    border: 2px solid black;
-    border-radius: 4px;
+.desktop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap */
 
 /* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 480px) { 
-/* .container{
-        display: block;
-        align-items: center;
-        justify-content: space-around;
+@media (min-width: 1300px) { 
+    .parallax {
+        /* The image used */
+        background-image: url(images/left.jpeg);
+        display: none;
+        /* Set a specific height */
+        height: 100vh;
+        min-width: 450px;
+    
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    } 
+    
+    .parallax2{
+        /* The image used */
+    background-image: url(images/right.jpeg);
+    display: none;
+    /* Set a specific height */
+    height: 100vh;
+    min-width: 450px;
+    
+     /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
     }
-.pokeimage{
-        height: 50px;
-        width: 50px;
-    }*/
+    
+    .slot2{
+        align-self: center;
+    }
+}
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    
 }
 
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {  }
-/* .pokeimage{
-    height: 100px;
-    width: 100px;
-} */
-
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  }
-
+@media (min-width: 1300px) {  
+.parallax, .parallax2{
+    display:block
+    
+}
+.team1-2, .team3-4, .team5-6{
+    gap: 50px;
+    margin: 25px 25px;
+}
+}
 /* // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 

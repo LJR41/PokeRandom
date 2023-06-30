@@ -22,6 +22,7 @@ async function giveRandom1(){
         randomName.innerText = randomData.name
         document.getElementById("finalImg1").src = randomData.sprites.front_default
         document.querySelector('.notFull1').src = randomData.sprites.front_default
+        document.getElementById('errImg1').src = randomData.sprites.front_default
         
     }
     try{
@@ -47,12 +48,16 @@ async function giveRandom1(){
             randomName.innerText = randomData2.name
             document.getElementById("finalImg1").src = randomData2.sprites.front_default
             document.querySelector('.notFull1').src = randomData2.sprites.front_default
+            document.getElementById('errImg1').src = randomData2.sprites.front_default
 
 }
 }
 catch{
     errModal.style.display = "block"
     randomImg.src = "images/missing.gif"
+    document.getElementById("finalImg1").src = "images/missing.gif"
+    document.querySelector('.notFull1').src = "images/missing.gif"
+    document.getElementById('errImg1').src = "images/missing.gif"
     document.getElementById("randomName1").innerText = "ERROR"
     
 }
@@ -80,6 +85,7 @@ async function giveRandom2(){
         randomName.innerText = randomData.name
         document.getElementById("finalImg2").src = randomData.sprites.front_default
         document.querySelector('.notFull2').src = randomData.sprites.front_default
+        document.getElementById('errImg2').src = randomData.sprites.front_default
     }
     try{
     if (typeValue2 > 0){
@@ -104,12 +110,16 @@ async function giveRandom2(){
             randomName.innerText = randomData2.name
             document.getElementById("finalImg2").src = randomData2.sprites.front_default
             document.querySelector('.notFull2').src = randomData2.sprites.front_default
+            document.getElementById('errImg2').src = randomData2.sprites.front_default
 
 }
 }
 catch{
     errModal.style.display = "block"
     randomImg.src = "images/missing.gif"
+    document.getElementById("finalImg2").src = "images/missing.gif"
+    document.querySelector('.notFull2').src = "images/missing.gif"
+    document.getElementById('errImg2').src = "images/missing.gif"
     document.getElementById("randomName3").innerText = "ERROR"
 }
 }
@@ -135,6 +145,7 @@ async function giveRandom3(){
         randomName.innerText = randomData.name
         document.getElementById("finalImg3").src = randomData.sprites.front_default
         document.querySelector('.notFull3').src = randomData.sprites.front_default
+        document.getElementById('errImg3').src = randomData.sprites.front_default
     }
     try{
     if (typeValue2 > 0){
@@ -159,12 +170,16 @@ async function giveRandom3(){
             randomName.innerText = randomData2.name
             document.getElementById("finalImg3").src = randomData2.sprites.front_default
             document.querySelector('.notFull3').src = randomData2.sprites.front_default
+            document.getElementById('errImg3').src = randomData2.sprites.front_default
 
 }
 }
 catch{
     errModal.style.display = "block"
     randomImg.src = "images/missing.gif"
+    document.getElementById("finalImg3").src = "images/missing.gif"
+    document.querySelector('.notFull3').src = "images/missing.gif"
+    document.getElementById('errImg3').src = "images/missing.gif"
     document.getElementById("randomName3").innerText = "ERROR"
 }
 }
@@ -190,6 +205,7 @@ async function giveRandom4(){
         randomName.innerText = randomData.name
         document.getElementById("finalImg4").src = randomData.sprites.front_default
         document.querySelector('.notFull4').src = randomData.sprites.front_default
+        document.getElementById('errImg4').src = randomData.sprites.front_default
     }
     try{
     if (typeValue2 > 0){
@@ -214,12 +230,16 @@ async function giveRandom4(){
             randomName.innerText = randomData2.name
             document.getElementById("finalImg4").src = randomData2.sprites.front_default
             document.querySelector('.notFull4').src = randomData2.sprites.front_default
+            document.getElementById('errImg4').src = randomData2.sprites.front_default
 
 }
 }
 catch{
     errModal.style.display = "block"
     randomImg.src = "images/missing.gif"
+    document.getElementById("finalImg4").src = "images/missing.gif"
+    document.querySelector('.notFull4').src = "images/missing.gif"
+    document.getElementById('errImg4').src = "images/missing.gif"
     document.getElementById("randomName4").innerText = "ERROR"
 }
 }
@@ -245,6 +265,7 @@ async function giveRandom5(){
         randomName.innerText = randomData.name
         document.getElementById("finalImg5").src = randomData.sprites.front_default
         document.querySelector('.notFull5').src = randomData.sprites.front_default
+        document.getElementById('errImg5').src = randomData.sprites.front_default
     }
     try {
     if (typeValue2 > 0){
@@ -269,12 +290,16 @@ async function giveRandom5(){
             randomName.innerText = randomData2.name
             document.getElementById("finalImg5").src = randomData2.sprites.front_default
             document.querySelector('.notFull5').src = randomData2.sprites.front_default
+            document.getElementById('errImg5').src = randomData2.sprites.front_default
 
 }
 }
 catch{
     errModal.style.display = "block"
     randomImg.src = "images/missing.gif"
+    document.getElementById("finalImg5").src = "images/missing.gif"
+    document.querySelector('.notFull5').src = "images/missing.gif"
+    document.getElementById('errImg5').src = "images/missing.gif"
     document.getElementById("randomName5").innerText = "ERROR"
 }
 }
@@ -300,6 +325,7 @@ async function giveRandom6(){
         randomName.innerText = randomData.name
         document.getElementById("finalImg6").src = randomData.sprites.front_default
         document.querySelector('.notFull6').src = randomData.sprites.front_default
+        document.getElementById('errImg6').src = randomData.sprites.front_default
     }
     try{
     if (typeValue2 > 0){
@@ -324,12 +350,16 @@ async function giveRandom6(){
             randomName.innerText = randomData2.name
             document.getElementById("finalImg6").src = randomData2.sprites.front_default
             document.querySelector('.notFull6').src = randomData2.sprites.front_default
+            document.getElementById('errImg6').src = randomData2.sprites.front_default
 
 }
 }
 catch{
     errModal.style.display = "block"
     randomImg.src = "images/missing.gif"
+    document.getElementById("finalImg6").src = "images/missing.gif"
+    document.querySelector('.notFull6').src = "images/missing.gif"
+    document.getElementById('errImg6').src = "images/missing.gif"
     document.getElementById("randomName6").innerText = "ERROR"
 }
 }
@@ -384,6 +414,7 @@ async function randomStar(){
             randomName.innerText = randomStarter.name
             document.getElementById("finalImg1").src = randomStarter.sprites.front_default
             document.querySelector('.notFull1').src = randomStarter.sprites.front_default
+            document.getElementById('errImg1').src = randomStarter.sprites.front_default
     }
     if (typeValue == 2){
         var starters = await Promise.all([
@@ -403,6 +434,7 @@ async function randomStar(){
             randomName.innerText = randomStarter.name
             document.getElementById("finalImg1").src = randomStarter.sprites.front_default
             document.querySelector('.notFull1').src = randomStarter.sprites.front_default
+            document.getElementById('errImg1').src = randomStarter.sprites.front_default
     }
     if(typeValue == 3){
     var starters = await Promise.all([
@@ -417,12 +449,12 @@ async function randomStar(){
         fetch("https://pokeapi.co/api/v2/pokemon/quaxly").then((startData) => startData.json() ),
     ])
     var randomStarter = starters[(Math.floor(Math.random() * starters.length))]
-    console.log(randomStarter)
         randomImg.src = randomStarter.sprites.front_default
     var randomName = document.getElementById("randomName1")
         randomName.innerText = randomStarter.name
         document.getElementById("finalImg1").src = randomStarter.sprites.front_default
         document.querySelector('.notFull1').src = randomStarter.sprites.front_default
+        document.getElementById('errImg1').src = randomStarter.sprites.front_default
     }
     if(typeValue == 4){
         var starters = await fetch("https://pokeapi.co/api/v2/pokemon/pikachu")
@@ -432,6 +464,7 @@ async function randomStar(){
             randomName.innerText = pikaStart.name
             document.getElementById("finalImg1").src = pikaStart.sprites.front_default
             document.querySelector('.notFull1').src = pikaStart.sprites.front_default
+            document.getElementById('errImg1').src = pikaStart.sprites.front_default
     }
     if(typeValue == 5){
         var starters = await fetch("https://pokeapi.co/api/v2/pokemon/eevee")
@@ -441,6 +474,7 @@ async function randomStar(){
             randomName.innerText = evStart.name
             document.getElementById("finalImg1").src = evStart.sprites.front_default
             document.querySelector('.notFull1').src = evStart.sprites.front_default
+            document.getElementById('errImg1').src = evStart.sprites.front_default
 }
 }
 // Get the modal
@@ -448,6 +482,7 @@ var modal = document.getElementById("myModal");
 var errModal = document.getElementById("errModal")
 var notFull = document.getElementById("notfullmodal")
 var none = document.getElementById("nonemodal")
+var finalerr = document.getElementById("finalerr")
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
 // Get the <span> element that closes the modal
@@ -455,6 +490,7 @@ var span = document.getElementsByClassName("close")[0];
 var errspan = document.getElementsByClassName("errclose")[0];
 var notspan = document.getElementsByClassName("notclose")[0];
 var nonespan = document.getElementsByClassName("noneclose")[0];
+var finalspan = document.getElementsByClassName("finalclose")[0];
 // When the user clicks on the button, open the modal
 function getFinal() {
     var pokeImage = document.querySelector('.notFinal1 > img').src;
@@ -463,19 +499,34 @@ function getFinal() {
 
     function checkImgs(){
         var total = 0
+
     for (var i = 0; i < pokeImage3.length; i++){
         if(pokeImage3[i] == 'file:///C:/Users/Josh/Desktop/Coding%20Dojo/Projects/PokeRandom/images/tallgrass.png' ){
-            total += 1
+            total += 1            
         }
     }
     return total
 }
+    function checkErr(){
+        var error = 0
+        for (var i = 0; i < pokeImage3.length; i++){
+            if(pokeImage3[i] == "file:///C:/Users/Josh/Desktop/Coding%20Dojo/Projects/PokeRandom/images/missing.gif" ){
+                error += 1
+                return error
+        }    
+    }
+}
+
     var result = checkImgs()
-    if(result < 6 && result > 0){
+    var erresult = checkErr()
+    if(erresult == 1){
+        finalerr.style.display = "block"
+    }
+    if(result < 6 && result > 0 && erresult == 0){
+        console.log("Im in here")
         notFull.style.display = "block"
     }
     if(result == 6){
-        console.log(result)
         none.style.display = "block"
     }
     if(result == 0){
@@ -495,6 +546,10 @@ notspan.onclick = function() {
     }
 nonespan.onclick = function() {
     none.style.display = "none"
+}
+
+finalspan.onclick = function(){
+    finalerr.style.display = "none"
 }
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -521,6 +576,38 @@ window.onclick = function(event) {
     }
 } 
 
+window.onclick = function (event) {
+    if (event.target == finalerr){
+        finalerr.style.display = "none"
+    }
+}
 
 
 
+var body = document.querySelector('body')
+var team = document.getElementById('team')
+var umbreon = document.getElementById('umbreon')
+var espeon = document.getElementById('espeon')
+var darkZard = document.getElementById('darkzard')
+var lightZard = document.getElementById('lightzard')
+
+function changeLight(){
+        body.style.background = 'black'
+        body.style.transition = '2s'
+        team.style.background = 'gray'
+        umbreon.style.display = 'block'
+        espeon.style.display = 'none'
+        darkZard.style.display = 'block'
+        lightZard.style.display = 'none'
+        
+}
+
+function changeDark(){
+        body.style.background = 'white'
+        body.style.transition = '2s'
+        team.style.background = 'none'
+        umbreon.style.display = 'none'
+        espeon.style.display = 'block'
+        darkZard.style.display = 'none'
+        lightZard.style.display = 'block'
+}
