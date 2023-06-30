@@ -513,8 +513,8 @@ function getFinal() {
             if(pokeImage3[i] == "file:///C:/Users/Josh/Desktop/Coding%20Dojo/Projects/PokeRandom/images/missing.gif"){
                 error += 1
             }    
-            return error
-    }
+        }
+        return error
 }
 
     var result = checkImgs()
