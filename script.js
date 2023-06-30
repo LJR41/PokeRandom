@@ -120,7 +120,7 @@ catch{
     document.getElementById("finalImg2").src = "images/missing.gif"
     document.querySelector('.notFull2').src = "images/missing.gif"
     document.getElementById('errImg2').src = "images/missing.gif"
-    document.getElementById("randomName3").innerText = "ERROR"
+    document.getElementById("randomName2").innerText = "ERROR"
 }
 }
 async function giveRandom3(){
@@ -501,7 +501,7 @@ function getFinal() {
         var total = 0
 
     for (var i = 0; i < pokeImage3.length; i++){
-        if(pokeImage3[i] == 'file:///C:/Users/Josh/Desktop/Coding%20Dojo/Projects/PokeRandom/images/tallgrass.png' ){
+        if(pokeImage3[i] == 'file:///C:/Users/Josh/Desktop/Coding%20Dojo/Projects/PokeRandom/images/tallgrass.png'){
             total += 1            
         }
     }
@@ -510,26 +510,28 @@ function getFinal() {
     function checkErr(){
         var error = 0
         for (var i = 0; i < pokeImage3.length; i++){
-            if(pokeImage3[i] == "file:///C:/Users/Josh/Desktop/Coding%20Dojo/Projects/PokeRandom/images/missing.gif" ){
+            if(pokeImage3[i] == "file:///C:/Users/Josh/Desktop/Coding%20Dojo/Projects/PokeRandom/images/missing.gif"){
                 error += 1
-                return error
-        }    
+            }    
+            return error
     }
 }
 
     var result = checkImgs()
     var erresult = checkErr()
-    if(erresult == 1){
+    console.log(erresult)
+    if(erresult > 0){
+        console.log(erresult)
         finalerr.style.display = "block"
     }
     if(result < 6 && result > 0 && erresult == 0){
-        console.log("Im in here")
+        console.log(erresult)
         notFull.style.display = "block"
     }
     if(result == 6){
         none.style.display = "block"
     }
-    if(result == 0){
+    if(result == 0 && erresult == 0){
         modal.style.display = "block";
     }
 }

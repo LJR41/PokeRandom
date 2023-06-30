@@ -239,7 +239,7 @@ a{
 }
 
 .close:hover,
-.close:focus 
+.close:focus, 
 .errclose:hover,
 .errclose:focus,
 .notclose:hover,
