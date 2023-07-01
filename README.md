@@ -17,11 +17,14 @@
  ###### Random Typing -
  Adding an option to randomize your typings, just to add another layer of randomized chaos for users!
 
- ###### Mozilla Functionality -
-Currently, some functionality is not translating when used in the Mozilla browser, so for now please use Chrome!
+ ###### Media Queries for Tablet and XLarge -
+ Add media queries and styling for these two viewports.
 
 ###### Suggestions Box -
 Adding a link in the footer to be able to send in requests, suggestions, and/or issues.
 
 ###### Credits - 
 Adding a link to credit the artist for the images used here!
+
+###### More Styling
+Add another info box, with a carousel for images and gifs, maybe even some PokeFacts.
