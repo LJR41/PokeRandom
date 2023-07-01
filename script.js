@@ -555,6 +555,7 @@ function getFinal() {
 
     var result = checkImgs()
     var erresult = checkErr()
+    console.log(result,erresult)
     console.log(erresult)
     if(erresult > 0){
         console.log(erresult)
