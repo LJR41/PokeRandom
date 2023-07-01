@@ -14,9 +14,15 @@ async function giveRandom1(){
     var randomMon = []
     // pokeData is the object we access for all the pokemon of that type EX. "normal"
     if (typeValue2 <= 0){
-        var random = pokeData.pokemon[(Math.floor(Math.random() * pokeData.pokemon.length))]
-        var randomUrl = random.pokemon.url
-        var randomresponse = await fetch(randomUrl)
+        for(var i=0; i<pokeData.pokemon.length; i++){
+        typeCheck = await fetch (pokeData.pokemon[i].pokemon.url)
+        checkData = await typeCheck.json();
+        if (checkData.types.length == 1){
+            randomMon.push(pokeData.pokemon[i].pokemon.url)
+        }
+    }
+        var random = randomMon[(Math.floor(Math.random() * randomMon.length))]
+        var randomresponse = await fetch(random)
         var randomData = await randomresponse.json();
         randomImg.src = randomData.sprites.front_default
         randomName.innerText = randomData.name
@@ -77,9 +83,15 @@ async function giveRandom2(){
     var randomMon = []
     // pokeData is the object we access all the pokemon of that type EX. "normal"
     if (typeValue2 <= 0){
-        var random = pokeData.pokemon[(Math.floor(Math.random() * pokeData.pokemon.length))]
-        var randomUrl = random.pokemon.url
-        var randomresponse = await fetch(randomUrl)
+        for(var i=0; i<pokeData.pokemon.length; i++){
+            typeCheck = await fetch (pokeData.pokemon[i].pokemon.url)
+            checkData = await typeCheck.json();
+            if (checkData.types.length == 1){
+                randomMon.push(pokeData.pokemon[i].pokemon.url)
+            }
+        }
+        var random = randomMon[(Math.floor(Math.random() * randomMon.length))]
+        var randomresponse = await fetch(random)
         var randomData = await randomresponse.json();
         randomImg.src = randomData.sprites.front_default
         randomName.innerText = randomData.name
@@ -137,9 +149,15 @@ async function giveRandom3(){
     var randomMon = []
     // pokeData is the object we access all the pokemon of that type EX. "normal"
     if (typeValue2 <= 0){
-        var random = pokeData.pokemon[(Math.floor(Math.random() * pokeData.pokemon.length))]
-        var randomUrl = random.pokemon.url
-        var randomresponse = await fetch(randomUrl)
+        for(var i=0; i<pokeData.pokemon.length; i++){
+            typeCheck = await fetch (pokeData.pokemon[i].pokemon.url)
+            checkData = await typeCheck.json();
+            if (checkData.types.length == 1){
+                randomMon.push(pokeData.pokemon[i].pokemon.url)
+            }
+        }
+        var random = randomMon[(Math.floor(Math.random() * randomMon.length))]
+        var randomresponse = await fetch(random)
         var randomData = await randomresponse.json();
         randomImg.src = randomData.sprites.front_default
         randomName.innerText = randomData.name
@@ -197,9 +215,15 @@ async function giveRandom4(){
     var randomMon = []
     // pokeData is the object we access all the pokemon of that type EX. "normal"
     if (typeValue2 <= 0){
-        var random = pokeData.pokemon[(Math.floor(Math.random() * pokeData.pokemon.length))]
-        var randomUrl = random.pokemon.url
-        var randomresponse = await fetch(randomUrl)
+        for(var i=0; i<pokeData.pokemon.length; i++){
+            typeCheck = await fetch (pokeData.pokemon[i].pokemon.url)
+            checkData = await typeCheck.json();
+            if (checkData.types.length == 1){
+                randomMon.push(pokeData.pokemon[i].pokemon.url)
+            }
+        }
+        var random = randomMon[(Math.floor(Math.random() * randomMon.length))]
+        var randomresponse = await fetch(random)
         var randomData = await randomresponse.json();
         randomImg.src = randomData.sprites.front_default
         randomName.innerText = randomData.name
@@ -257,9 +281,15 @@ async function giveRandom5(){
     var randomMon = []
     // pokeData is the object we access all the pokemon of that type EX. "normal"
     if (typeValue2 <= 0){
-        var random = pokeData.pokemon[(Math.floor(Math.random() * pokeData.pokemon.length))]
-        var randomUrl = random.pokemon.url
-        var randomresponse = await fetch(randomUrl)
+        for(var i=0; i<pokeData.pokemon.length; i++){
+            typeCheck = await fetch (pokeData.pokemon[i].pokemon.url)
+            checkData = await typeCheck.json();
+            if (checkData.types.length == 1){
+                randomMon.push(pokeData.pokemon[i].pokemon.url)
+            }
+        }
+        var random = randomMon[(Math.floor(Math.random() * randomMon.length))]
+        var randomresponse = await fetch(random)
         var randomData = await randomresponse.json();
         randomImg.src = randomData.sprites.front_default
         randomName.innerText = randomData.name
@@ -317,9 +347,15 @@ async function giveRandom6(){
     var randomMon = []
     // pokeData is the object we access all the pokemon of that type EX. "normal"
     if (typeValue2 <= 0){
-        var random = pokeData.pokemon[(Math.floor(Math.random() * pokeData.pokemon.length))]
-        var randomUrl = random.pokemon.url
-        var randomresponse = await fetch(randomUrl)
+        for(var i=0; i<pokeData.pokemon.length; i++){
+            typeCheck = await fetch (pokeData.pokemon[i].pokemon.url)
+            checkData = await typeCheck.json();
+            if (checkData.types.length == 1){
+                randomMon.push(pokeData.pokemon[i].pokemon.url)
+            }
+        }
+        var random = randomMon[(Math.floor(Math.random() * randomMon.length))]
+        var randomresponse = await fetch(random)
         var randomData = await randomresponse.json();
         randomImg.src = randomData.sprites.front_default
         randomName.innerText = randomData.name
@@ -592,6 +628,8 @@ var umbreon = document.getElementById('umbreon')
 var espeon = document.getElementById('espeon')
 var darkZard = document.getElementById('darkzard')
 var lightZard = document.getElementById('lightzard')
+var paraOne = document.getElementById('paraOne')
+var paraTwo = document.getElementById('paraTwo')
 
 function changeLight(){
         body.style.background = 'black'
@@ -601,8 +639,12 @@ function changeLight(){
         espeon.style.display = 'none'
         darkZard.style.display = 'block'
         lightZard.style.display = 'none'
-        
+        paraOne.style.backgroundImage = "url(images/nightleft.png)"
+        paraOne.style.transition = '2s'
+        paraTwo.style.backgroundImage = "url(images/nightright.png)"
+        paraTwo.style.transition = "2s"
 }
+
 
 function changeDark(){
         body.style.background = 'white'
@@ -612,4 +654,8 @@ function changeDark(){
         espeon.style.display = 'block'
         darkZard.style.display = 'none'
         lightZard.style.display = 'block'
+        paraOne.style.backgroundImage = "url(images/left.jpeg)"
+        paraOne.style.transition = '2s'
+        paraTwo.style.backgroundImage = "url(images/right.jpeg)"
+        paraTwo.style.transition = "2s"
 }
