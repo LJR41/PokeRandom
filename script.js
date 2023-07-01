@@ -546,7 +546,7 @@ function getFinal() {
     function checkErr(){
         var error = 0
         for (var i = 0; i < pokeImage3.length; i++){
-            if(pokeImage3[i] == "images/missing.gif"){
+            if(pokeImage3[i] == "https://ljr41.github.io/PokeRandom/images/missing.gif"){
                 error += 1
             }    
         }
