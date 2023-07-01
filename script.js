@@ -531,13 +531,13 @@ var finalspan = document.getElementsByClassName("finalclose")[0];
 function getFinal() {
     var pokeImage = document.querySelector('.notFinal1 > img').src;
     var pokeImage2 = document.querySelector('.notFinal2 > img').src;
-    var pokeImage3 = [document.querySelector('.notFull1').src, document.querySelector('.notFull2').src, document.querySelector('.notFull3').src, document.querySelector('.notFull4').src, document.querySelector('.notFull5').src, document.querySelector('.notFull6').src ]
+    var pokeImage3 = [document.getElementById('notFull1').src, document.getElementById('notFull2').src, document.getElementById('notFull3').src, document.getElementById('notFull4').src, document.getElementById('notFull5').src, document.getElementById('notFull6').src ]
 
     function checkImgs(){
         var total = 0
 
     for (var i = 0; i < pokeImage3.length; i++){
-        if(pokeImage3[i] == "https://github.com/LJR41/PokeRandom/blob/main/images/tallgrass.png"){
+        if(pokeImage3[i] == "images/tallgrass.png"){
             total += 1            
         }
     }
