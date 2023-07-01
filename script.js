@@ -537,7 +537,7 @@ function getFinal() {
         var total = 0
 
     for (var i = 0; i < pokeImage3.length; i++){
-        if(pokeImage3[i] == 'file:///C:/Users/Josh/Desktop/Coding%20Dojo/Projects/PokeRandom/images/tallgrass.png'){
+        if(pokeImage3[i] == 'images/tallgrass.png'){
             total += 1            
         }
     }
@@ -546,7 +546,7 @@ function getFinal() {
     function checkErr(){
         var error = 0
         for (var i = 0; i < pokeImage3.length; i++){
-            if(pokeImage3[i] == "file:///C:/Users/Josh/Desktop/Coding%20Dojo/Projects/PokeRandom/images/missing.gif"){
+            if(pokeImage3[i] == "images/missing.gif"){
                 error += 1
             }    
         }
