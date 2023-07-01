@@ -537,7 +537,7 @@ function getFinal() {
         var total = 0
 
     for (var i = 0; i < pokeImage3.length; i++){
-        if(pokeImage3[i] == "images/tallgrass.png"){
+        if(pokeImage3[i] == "https://ljr41.github.io/PokeRandom/images/tallgrass.png"){
             total += 1            
         }
     }
