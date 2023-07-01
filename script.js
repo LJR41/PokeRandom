@@ -532,10 +532,10 @@ function getFinal() {
     var pokeImage = document.querySelector('.notFinal1 > img').src;
     var pokeImage2 = document.querySelector('.notFinal2 > img').src;
     var pokeImage3 = [document.getElementById('notFull1').src, document.getElementById('notFull2').src, document.getElementById('notFull3').src, document.getElementById('notFull4').src, document.getElementById('notFull5').src, document.getElementById('notFull6').src ]
-    console.log(pokeImage3)
+
+
     function checkImgs(){
-        var total = 0
-        
+        var total = 0        
     for (var i = 0; i < pokeImage3.length; i++){
         if(pokeImage3[i] == "https://ljr41.github.io/PokeRandom/images/tallgrass.png"){
             total += 1            
