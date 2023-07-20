@@ -16,6 +16,10 @@ Suggestions - Send us your feedback and bug finds in the footer!
 
  #### WIP - 
 
+ ###### Backend Functionality!!
+
+ Coming Soon! You'll be able to register an account that will hold some extra features, such as saving your team, nicknaming your pokemon and selecting your favorite region!
+
  ###### Random Typing -
  Adding an option to randomize your typings, just to add another layer of randomized chaos for users!
 

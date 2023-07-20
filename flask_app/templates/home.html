@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"  href="{{ url_for ('static', filename='css/style.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <title>PokeRandom</title>
 </head>
 <body>
     <div class="container">
         <div class="navbar parent flex navdarkmode">
-            <img id="lightzard" class="zardheader" src="./images/zardnav.gif" alt="">
-            <img id ="darkzard" src="./images/shiny-zard.gif" alt="">
+            <img id="lightzard" class="zardheader" src="{{url_for ('static', filename ='images/zardnav.gif')}}" alt="">
+            <img id ="darkzard" src="{{url_for('static', filename='./images/shiny-zard.gif')}}" alt="">
             <h1>PokeRandom</h1>
 
         </div>
@@ -29,7 +29,7 @@
                                 <h3 id="randomName1">Pick your Type(s)!</h3>
                             </div>
                             <div class="mon1 flex">
-                                <img class ="pokeimage" id="randomImg1" src="./images/tallgrass.png" alt="">
+                                <img class ="pokeimage" id="randomImg1" src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
                             </div>
                         </div>
                         <div class="montype">
@@ -104,7 +104,7 @@
                                 <h3 id="randomName2">Pick your Type(s)!</h3>
                             </div>
                             <div class="mon2 flex">
-                                <img class ="pokeimage" id="randomImg2" src="images/tallgrass.png" alt="">
+                                <img class ="pokeimage" id="randomImg2" src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
                             </div>
             
                         </div>
@@ -169,7 +169,7 @@
                                 <h3 id="randomName3">Pick your Type(s)!</h3>
                             </div>
                             <div class="mon3 flex">
-                                <img class ="pokeimage" id="randomImg3" src="images/tallgrass.png" alt="">
+                                <img class ="pokeimage" id="randomImg3" src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
                             </div>
                         </div>
                         <div class="montype">
@@ -231,7 +231,7 @@
                             <h3 id="randomName4">Pick your Type(s)!</h3>
                         </div>
                         <div class="mon4 flex">
-                            <img class ="pokeimage" id="randomImg4" src="images/tallgrass.png" alt="">
+                            <img class ="pokeimage" id="randomImg4" src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
                         </div>
             
                     </div>
@@ -296,7 +296,7 @@
                         <h3 id="randomName5">Pick your Type(s)!</h3>
                     </div>
                     <div class="mon5 flex">
-                        <img class ="pokeimage" id="randomImg5" src="images/tallgrass.png" alt="">
+                        <img class ="pokeimage" id="randomImg5" src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
                     </div>
                 </div>
                 <div class="montype">
@@ -358,7 +358,7 @@
                         <h3 id="randomName6">Pick your Type(s)!</h3>
                     </div>
                     <div class="mon6 flex">
-                        <img class ="pokeimage" id="randomImg6" src="images/tallgrass.png" alt="">
+                        <img class ="pokeimage" id="randomImg6" src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
                     </div>
             
                 </div>
@@ -433,14 +433,14 @@
                     <p>Congratulations! Here's your team! Good luck out there!</p>
                 </div>
                 <div class="final1 flex">
-                    <img class ="pokeimage" id="finalImg1" src="images/tallgrass.png" alt="">
-                    <img class ="pokeimage" id="finalImg2" src="images/tallgrass.png" alt="">
-                    <img class ="pokeimage" id="finalImg3" src="images/tallgrass.png" alt="">
+                    <img class ="pokeimage" id="finalImg1" src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
+                    <img class ="pokeimage" id="finalImg2" src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
+                    <img class ="pokeimage" id="finalImg3" src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
                 </div>
                 <div class="final2 flex">
-                    <img class ="pokeimage" id="finalImg4" src="images/tallgrass.png" alt="">
-                    <img class ="pokeimage" id="finalImg5" src="images/tallgrass.png" alt="">
-                    <img class ="pokeimage" id="finalImg6" src="images/tallgrass.png" alt="">
+                    <img class ="pokeimage" id="finalImg4" src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
+                    <img class ="pokeimage" id="finalImg5" src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
+                    <img class ="pokeimage" id="finalImg6" src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
                 </div>
             </div>
                 
@@ -453,17 +453,17 @@
                             <p>Uh-oh, something strange happened... I'd suggest using some different Pokemon</p>
                         </div>
                         <div class="final1 flex">
-                            <img class ="pokeimage" id="errImg1" src="images/tallgrass.png" alt="">
-                            <img class ="pokeimage" id="errImg2" src="images/tallgrass.png" alt="">
-                            <img class ="pokeimage" id="errImg3" src="images/tallgrass.png" alt="">
+                            <img class ="pokeimage" id="errImg1" src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
+                            <img class ="pokeimage" id="errImg2" src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
+                            <img class ="pokeimage" id="errImg3" src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
                         </div>
                         <div class="final2 flex">
-                            <img class ="pokeimage" id="errImg4" src="images/tallgrass.png" alt="">
-                            <img class ="pokeimage" id="errImg5" src="images/tallgrass.png" alt="">
-                            <img class ="pokeimage" id="errImg6" src="images/tallgrass.png" alt="">
+                            <img class ="pokeimage" id="errImg4" src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
+                            <img class ="pokeimage" id="errImg5" src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
+                            <img class ="pokeimage" id="errImg6" src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
                         </div>
                         <div class="flex">
-                            <img id="burnet" src="./images/burnet.png" alt="">
+                            <img id="burnet" src="{{url_for ('static', filename ='images/burnet.png')}}" alt="">
                         </div>
                     </div>
                         
@@ -480,17 +480,17 @@
                                 </h6>
                             </div>
                             <div class="notFinal1 flex">
-                                <img id="notFull1" class ="notFull1 pokeimage"  src="images/tallgrass.png" alt="">
-                                <img id="notFull2" class ="notFull2 pokeimage"  src="images/tallgrass.png" alt="">
-                                <img id="notFull3" class ="notFull3 pokeimage"  src="images/tallgrass.png" alt="">
+                                <img id="notFull1" class ="notFull1 pokeimage"  src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
+                                <img id="notFull2" class ="notFull2 pokeimage"  src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
+                                <img id="notFull3" class ="notFull3 pokeimage"  src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
                             </div>
                             <div class="notFinal2 flex">
-                                <img id="notFull4" class ="notFull4 pokeimage"  src="images/tallgrass.png" alt="">
-                                <img id="notFull5" class ="notFull5 pokeimage"  src="images/tallgrass.png" alt="">
-                                <img id="notFull6" class ="notFull6 pokeimage"  src="images/tallgrass.png" alt="">
+                                <img id="notFull4" class ="notFull4 pokeimage"  src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
+                                <img id="notFull5" class ="notFull5 pokeimage"  src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
+                                <img id="notFull6" class ="notFull6 pokeimage"  src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
                             </div>
                             <div class="flex">
-                                <img id="sada" src="./images/sada.png" alt="">
+                                <img id="sada" src="{{url_for ('static', filename ='images/sada.png')}}" alt="">
                             </div>
                         </div>
                         
@@ -505,17 +505,17 @@
                                             </h4>
                                         </div>
                                         <div class="noneFinal1 flex">
-                                            <img class ="none1 pokeimage"  src="images/tallgrass.png" alt="">
-                                            <img class ="none2 pokeimage"  src="images/tallgrass.png" alt="">
-                                            <img class ="none3 pokeimage"  src="images/tallgrass.png" alt="">
+                                            <img class ="none1 pokeimage"  src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
+                                            <img class ="none2 pokeimage"  src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
+                                            <img class ="none3 pokeimage"  src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
                                         </div>
                                         <div class="noneFinal2 flex">
-                                            <img class ="none4 pokeimage"  src="images/tallgrass.png" alt="">
-                                            <img class ="none5 pokeimage"  src="images/tallgrass.png" alt="">
-                                            <img class ="none6 pokeimage"  src="images/tallgrass.png" alt="">
+                                            <img class ="none4 pokeimage"  src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
+                                            <img class ="none5 pokeimage"  src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
+                                            <img class ="none6 pokeimage"  src="{{url_for ('static', filename ='images/tallgrass.png')}}" alt="">
                                         </div>
                                         <div class="flex">
-                                            <img id="birch" src="./images/birch.png" alt="">
+                                            <img id="birch" src="{{url_for ('static', filename ='images/birch.png')}}" alt="">
                                         </div>
                                     </div>
                                     
@@ -528,7 +528,7 @@
                     <div class="flex">
                         <p>It looks like this pokemon hasn't been discovered yet! Try a different combination.</p>
                     </div>
-                    <div class="flex"><img src="./images/oak.png" alt="professor oak" id="error"></div>
+                    <div class="flex"><img src="{{url_for ('static', filename ='images/oak.png')}}" alt="professor oak" id="error"></div>
                 </div>
             </div>
         <div class="resourceparent ">
@@ -547,8 +547,8 @@
                         </ul>
                     </div>
                     <div>
-                        <img id="umbreon" onclick="changeDark()" src="./images/umbreon.png" alt="">
-                        <img id="espeon" onclick="changeLight()" src="./images/espeon.png" alt="">
+                        <img id="umbreon" onclick="changeDark()" src="{{url_for ('static', filename ='images/umbreon.png')}}" alt="">
+                        <img id="espeon" onclick="changeLight()" src="{{url_for ('static', filename ='images/espeon.png')}}" alt="">
                     </div>
                 </div>
                 <div class="flex">
@@ -562,7 +562,7 @@
         </div>    
     </div>
     
-    <script src="script.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
 </body>
 </html>

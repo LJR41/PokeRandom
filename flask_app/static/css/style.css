@@ -265,7 +265,7 @@ a{
 @media (min-width: 1300px) { 
     .parallax {
         /* The image used */
-        background-image: url(images/left.jpeg);
+        background-image: url(/static/images/left.jpeg);
         display: none;
         /* Set a specific height */
         height: 100vh;
@@ -280,7 +280,7 @@ a{
     
     .parallax2{
         /* The image used */
-    background-image: url(images/right.jpeg);
+    background-image: url(/static/images/right.jpeg);
     display: none;
     /* Set a specific height */
     height: 100vh;

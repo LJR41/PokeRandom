@@ -2,7 +2,7 @@
 
 async function giveRandom1(){
     var randomImg = document.getElementById("randomImg1")
-    randomImg.src = "images/loading_ball.gif"
+    randomImg.src = "/static/images/loading_ball.gif"
     var randomName = document.getElementById("randomName1")
         randomName.innerText = "Searching..."
     var type = document.getElementById("typing1"); 
@@ -60,10 +60,10 @@ async function giveRandom1(){
 }
 catch{
     errModal.style.display = "block"
-    randomImg.src = "images/missing.gif"
-    document.getElementById("finalImg1").src = "images/missing.gif"
-    document.querySelector('.notFull1').src = "images/missing.gif"
-    document.getElementById('errImg1').src = "images/missing.gif"
+    randomImg.src = "/static/images/missing.gif"
+    document.getElementById("finalImg1").src = "/static/images/missing.gif"
+    document.querySelector('.notFull1').src = "/static/images/missing.gif"
+    document.getElementById('errImg1').src = "/static/images/missing.gif"
     document.getElementById("randomName1").innerText = "ERROR"
     
 }
@@ -71,7 +71,7 @@ catch{
 
 async function giveRandom2(){
     var randomImg = document.getElementById("randomImg2")
-    randomImg.src = "images/loading_ball.gif"
+    randomImg.src = "/static/images/loading_ball.gif"
     var randomName = document.getElementById("randomName2")
         randomName.innerText = "Searching..."
     var type = document.getElementById("typing2"); 
@@ -128,16 +128,16 @@ async function giveRandom2(){
 }
 catch{
     errModal.style.display = "block"
-    randomImg.src = "images/missing.gif"
-    document.getElementById("finalImg2").src = "images/missing.gif"
-    document.querySelector('.notFull2').src = "images/missing.gif"
-    document.getElementById('errImg2').src = "images/missing.gif"
+    randomImg.src = "/static/images/missing.gif"
+    document.getElementById("finalImg2").src = "/static/images/missing.gif"
+    document.querySelector('.notFull2').src = "/static/images/missing.gif"
+    document.getElementById('errImg2').src = "/static/images/missing.gif"
     document.getElementById("randomName2").innerText = "ERROR"
 }
 }
 async function giveRandom3(){
     var randomImg = document.getElementById("randomImg3")
-    randomImg.src = "images/loading_ball.gif"
+    randomImg.src = "/static/images/loading_ball.gif"
     var randomName = document.getElementById("randomName3")
         randomName.innerText = "Searching..."
     var type = document.getElementById("typing3"); 
@@ -194,16 +194,16 @@ async function giveRandom3(){
 }
 catch{
     errModal.style.display = "block"
-    randomImg.src = "images/missing.gif"
-    document.getElementById("finalImg3").src = "images/missing.gif"
-    document.querySelector('.notFull3').src = "images/missing.gif"
-    document.getElementById('errImg3').src = "images/missing.gif"
+    randomImg.src = "/static/images/missing.gif"
+    document.getElementById("finalImg3").src = "/static/images/missing.gif"
+    document.querySelector('.notFull3').src = "/static/images/missing.gif"
+    document.getElementById('errImg3').src = "/static/images/missing.gif"
     document.getElementById("randomName3").innerText = "ERROR"
 }
 }
 async function giveRandom4(){
     var randomImg = document.getElementById("randomImg4")
-    randomImg.src = "images/loading_ball.gif"
+    randomImg.src = "/static/images/loading_ball.gif"
     var randomName = document.getElementById("randomName4")
         randomName.innerText = "Searching..."
     var type = document.getElementById("typing4"); 
@@ -260,16 +260,16 @@ async function giveRandom4(){
 }
 catch{
     errModal.style.display = "block"
-    randomImg.src = "images/missing.gif"
-    document.getElementById("finalImg4").src = "images/missing.gif"
-    document.querySelector('.notFull4').src = "images/missing.gif"
-    document.getElementById('errImg4').src = "images/missing.gif"
+    randomImg.src = "/static/images/missing.gif"
+    document.getElementById("finalImg4").src = "/static/images/missing.gif"
+    document.querySelector('.notFull4').src = "/static/images/missing.gif"
+    document.getElementById('errImg4').src = "/static/images/missing.gif"
     document.getElementById("randomName4").innerText = "ERROR"
 }
 }
 async function giveRandom5(){
     var randomImg = document.getElementById("randomImg5")
-    randomImg.src = "images/loading_ball.gif"
+    randomImg.src = "/static/images/loading_ball.gif"
     var randomName = document.getElementById("randomName5")
         randomName.innerText = "Searching..."
     var type = document.getElementById("typing5"); 
@@ -326,16 +326,16 @@ async function giveRandom5(){
 }
 catch{
     errModal.style.display = "block"
-    randomImg.src = "images/missing.gif"
-    document.getElementById("finalImg5").src = "images/missing.gif"
-    document.querySelector('.notFull5').src = "images/missing.gif"
-    document.getElementById('errImg5').src = "images/missing.gif"
+    randomImg.src = "/static/images/missing.gif"
+    document.getElementById("finalImg5").src = "/static/images/missing.gif"
+    document.querySelector('.notFull5').src = "/static/images/missing.gif"
+    document.getElementById('errImg5').src = "/static/images/missing.gif"
     document.getElementById("randomName5").innerText = "ERROR"
 }
 }
 async function giveRandom6(){
     var randomImg = document.getElementById("randomImg6")
-    randomImg.src = "images/loading_ball.gif"
+    randomImg.src = "/static/images/loading_ball.gif"
     var randomName = document.getElementById("randomName6")
         randomName.innerText = "Searching..."
     var type = document.getElementById("typing6"); 
@@ -392,10 +392,10 @@ async function giveRandom6(){
 }
 catch{
     errModal.style.display = "block"
-    randomImg.src = "images/missing.gif"
-    document.getElementById("finalImg6").src = "images/missing.gif"
-    document.querySelector('.notFull6').src = "images/missing.gif"
-    document.getElementById('errImg6').src = "images/missing.gif"
+    randomImg.src = "/static/images/missing.gif"
+    document.getElementById("finalImg6").src = "/static/images/missing.gif"
+    document.querySelector('.notFull6').src = "/static/images/missing.gif"
+    document.getElementById('errImg6').src = "/static/images/missing.gif"
     document.getElementById("randomName6").innerText = "ERROR"
 }
 }
@@ -429,7 +429,7 @@ function getTraditional(element){
 }
 async function randomStar(){
     var randomImg = document.getElementById("randomImg1")
-    randomImg.src = "images/loading_ball.gif"
+    randomImg.src = "/static/images/loading_ball.gif"
     var type = document.getElementById("starter"); 
     var typeValue = type.value; 
     if (typeValue == 1){
@@ -537,7 +537,7 @@ function getFinal() {
     function checkImgs(){
         var total = 0        
     for (var i = 0; i < pokeImage3.length; i++){
-        if(pokeImage3[i] == "https://ljr41.github.io/PokeRandom/images/tallgrass.png"){
+        if(pokeImage3[i] == "http://127.0.0.1:5000/static/images/tallgrass.png"){
             total += 1            
         }
     }
@@ -546,7 +546,7 @@ function getFinal() {
     function checkErr(){
         var error = 0
         for (var i = 0; i < pokeImage3.length; i++){
-            if(pokeImage3[i] == "https://ljr41.github.io/PokeRandom/images/missing.gif"){
+            if(pokeImage3[i] == "http://127.0.0.1:5000/static/images/missing.gif"){
                 error += 1
             }    
         }
@@ -640,9 +640,9 @@ function changeLight(){
         espeon.style.display = 'none'
         darkZard.style.display = 'block'
         lightZard.style.display = 'none'
-        paraOne.style.backgroundImage = "url(images/nightleft.png)"
+        paraOne.style.backgroundImage = "url(/static/images/nightleft.png)"
         paraOne.style.transition = '2s'
-        paraTwo.style.backgroundImage = "url(images/nightright.png)"
+        paraTwo.style.backgroundImage = "url(/static/images/nightright.png)"
         paraTwo.style.transition = "2s"
 }
 
@@ -655,8 +655,8 @@ function changeDark(){
         espeon.style.display = 'block'
         darkZard.style.display = 'none'
         lightZard.style.display = 'block'
-        paraOne.style.backgroundImage = "url(images/left.jpeg)"
+        paraOne.style.backgroundImage = "url(/static/images/left.jpeg)"
         paraOne.style.transition = '2s'
-        paraTwo.style.backgroundImage = "url(images/right.jpeg)"
+        paraTwo.style.backgroundImage = "url(/static/images/right.jpeg)"
         paraTwo.style.transition = "2s"
 }
