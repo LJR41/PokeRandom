@@ -1,0 +1,13 @@
+.navbar{
+    background-image: linear-gradient(rgb(217,4,41), #2b2d42);
+}
+
+.navbar-brand{
+    color:rgb(237,242,244);
+    font-size:xx-large;
+}
+
+.zardheader{
+    width: 60x;
+    height: 75px;
+}
