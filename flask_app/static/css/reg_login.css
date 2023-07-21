@@ -1,3 +1,9 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+
 /* Navbar Styling */
 .navbar{
     background-image: linear-gradient(rgb(217,4,41), #2b2d42);
@@ -12,3 +18,74 @@
     width: 60x;
     height: 75px;
 }
+
+/* Parent Styling */
+
+#reg_login{
+    margin: 0 auto;
+}
+
+#register_parent, #login_parent{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 80vw
+}
+
+/* Media Queries */
+
+@media (min-width: 1300px) { 
+    #banner {
+        /* The image used */
+        background-image: url(/static/images/loginbanner.png);
+        display: none;
+        /* Set a specific height */
+        height: 100vh;
+        min-width: 400px;
+    
+        /* Create the parallax scrolling effect */
+        /* background-attachment: fixed;
+        /* background-position: left; */
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+    } 
+    
+    .parallax2{
+        /* The image used */
+    background-image: url(/static/images/right.jpeg);
+    display: none;
+    /* Set a specific height */
+    height: 100vh;
+    min-width: 450px;
+    
+     /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    
+    .slot2{
+        align-self: center;
+    }
+}
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 1300px) {  
+#banner, .parallax2{
+    display:block
+    
+}
+.team1-2, .team3-4, .team5-6{
+    gap: 50px;
+    margin: 25px 25px;
+}
+}
+/* // X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } */
